@@ -71,7 +71,7 @@ class PomodoroTimer:
 
         if timer_id == 1:
             full_second = 60 * 25
-            full_second = 5
+            
             while full_second > 0 and not self.stopped:
                 minutes,seconds = divmod(full_second,60)
                 self.pomodoro_timer_label.config(text=f"{minutes:02d}:{seconds:02d}")
@@ -90,7 +90,7 @@ class PomodoroTimer:
 
         elif timer_id == 2:
             full_second = 60 * 25
-            full_second = 5
+            
             while full_second > 0 and not self.stopped:
                 minutes,seconds = divmod(full_second,60)
                 self.shortbreak_timer_label.config(text=f"{minutes:02d}:{seconds:02d}")
@@ -103,7 +103,7 @@ class PomodoroTimer:
 
         elif timer_id == 3:
             full_second = 60 * 25
-            full_second = 5
+            
             while full_second > 0 and not self.stopped:
                 minutes,seconds = divmod(full_second,60)
                 self.longbreak_timer_label.config(text=f"{minutes:02d}:{seconds:02d}")
