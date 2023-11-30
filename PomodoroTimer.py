@@ -89,7 +89,7 @@ class PomodoroTimer:
                 self.start_timer()
 
         elif timer_id == 2:
-            full_second = 60 * 25
+            full_second = 60 * 5
             
             while full_second > 0 and not self.stopped:
                 minutes,seconds = divmod(full_second,60)
@@ -102,7 +102,7 @@ class PomodoroTimer:
                 self.start_timer()
 
         elif timer_id == 3:
-            full_second = 60 * 25
+            full_second = 60 * 10
             
             while full_second > 0 and not self.stopped:
                 minutes,seconds = divmod(full_second,60)
